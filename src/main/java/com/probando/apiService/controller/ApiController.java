@@ -19,9 +19,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.probando.apiService.ApiRepository;
 import com.probando.apiService.modelo.Tarea;
-@CrossOrigin(origins = "https://apiservicesspri.herokuapp.com:4200",maxAge  =3600)
+
 @RestController
 @RequestMapping("/tareas")
+@CrossOrigin
 public class ApiController {
 
 	
