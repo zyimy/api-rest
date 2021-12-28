@@ -21,6 +21,41 @@ public class Tarea {
 	
 	@Column(name = "completado")
 	private boolean completado;
+	
+	@Column(name = "fecha_entrega")
+	private String fechaEntrega;
+	
+	@Column(name = "fecha_inicio")
+	private String fechaInicio;
+	
+	@Column(name = "instituto")
+	private String instituto;
+	
+	
+
+	public String getFechaEntrega() {
+		return fechaEntrega;
+	}
+
+	public void setFechaEntrega(String fechaEntrega) {
+		this.fechaEntrega = fechaEntrega;
+	}
+
+	public String getFechaInicio() {
+		return fechaInicio;
+	}
+
+	public void setFechaInicio(String fechaInicio) {
+		this.fechaInicio = fechaInicio;
+	}
+
+	public String getInstituto() {
+		return instituto;
+	}
+
+	public void setInstituto(String instituto) {
+		this.instituto = instituto;
+	}
 
 	public Long getId() {
 		return id;

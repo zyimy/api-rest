@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.probando.apiService.ApiRepository;
+import com.probando.apiService.Repository.ApiRepository;
 import com.probando.apiService.modelo.Tarea;
 
 @RestController
@@ -57,7 +57,9 @@ public class ApiController {
 		
 		fromDbTarea.setNombre(tarea.getNombre());
 		fromDbTarea.setCompletado(tarea.isCompletado());
-		
+		fromDbTarea.setFechaInicio(tarea.getFechaInicio());
+		fromDbTarea.setFechaEntrega(tarea.getFechaEntrega());
+		fromDbTarea.setInstituto(tarea.getInstituto());
 		return tr.save(fromDbTarea);
 		
 		

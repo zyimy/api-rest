@@ -1,4 +1,4 @@
-package com.probando.apiService;
+package com.probando.apiService.Repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
